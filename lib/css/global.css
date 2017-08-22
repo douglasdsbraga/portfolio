@@ -16,7 +16,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 *, *:after, *:before 						{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; border:0; outline: none; }
 body, html 									{ height: 100%; }
 html 										{ background: #fff; }
-body 										{ font:16px Helvetica, sans-serif; color:#000000; background-color: rgb(220, 220, 220); }
+body 										{ font:16px Helvetica, sans-serif; color:#000000; background-color: #fff; }
 img 										{ border:none; overflow: hidden; display: inline-block; vertical-align: top; zoom: 1; *display: inline; }
 fieldset									{ display:block; border:none; }
 nav ul 										{ overflow: hidden; }
@@ -75,7 +75,7 @@ p strong									{ font-weight:bold; }
 	/* border */
 	--exemplo-border-color: valores hex ou rgba;
 
-	/* 
+	/*
 		Uso:
 		color: var(--exemplo-color
 	*/
@@ -116,7 +116,7 @@ p strong									{ font-weight:bold; }
 .gcBox h6                                   { font-size: 14px; }
 
 .gcBox sub 									{ vertical-align: sub; font-size: smaller; }
-.gcBox sup 									{ vertical-align: super; font-size: smaller; }    
+.gcBox sup 									{ vertical-align: super; font-size: smaller; }
 .gcBox blockquote 							{ display: block; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 40px; -webkit-margin-end: 40px; }
 
 .gcBox ul 									{ padding-left: 20px; }
@@ -128,9 +128,9 @@ p strong									{ font-weight:bold; }
 
 /*
     IE10 and IE11
-    ================== 
+    ==================
 */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     /* todas as regras do IE10 e IE11 */
 }
 
