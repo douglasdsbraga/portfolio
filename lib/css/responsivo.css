@@ -1,0 +1,95 @@
+/* nav resposivo */
+nav.responsivo 									{ display: none; position: fixed; top: 0; left: -280px; z-index: 999; margin-top: 0px; width: 280px; height: 100%; background: #666; border-right: 1px solid #333; transition:all .3s ease; -moz-transition:all .3s ease; -ms-transition:all .3s ease; -o-transition:all .3s ease; -webkit-transition:all .3s ease; }
+nav.responsivo.open_menu 						{ left: 0px; }
+
+nav.responsivo ul 								{ overflow: auto; height: 100%; position: relative; padding: 20px; }
+nav.responsivo ul li 							{ width: 100%; font-size: 18px; position: relative; line-height: 30px; border-top: 1px solid rgba(255,255,255,.1); }
+nav.responsivo ul li:first-child 				{ border: none; }
+nav.responsivo ul li a 							{ display: block; color: #fff; padding:5px 10px 2px 10px; }
+nav.responsivo ul li a:hover 					{ color:#a21e23; text-decoration: none; }
+nav.responsivo .btn_menu 						{ background: url(../img/btn-menu.png); width: 40px; height: 40px; display: block; text-indent: -9999px; position: absolute; top: 0; right: -45px; }
+
+/**
+
+	Estilos Globais
+
+*/
+
+/* Desktops
+=========================================== */
+@media (max-width:1380px){
+	.content									{ max-width:1280px; }
+}
+@media (max-width:1280px){
+	.content									{ max-width:1170px; }
+}
+
+@media (max-width:1170px){
+	.content									{ max-width:1024px; }
+}
+
+/* Tablets
+=========================================== */
+@media (max-width:1024px){
+	.content									{ max-width:768px; }
+}
+
+@media (max-width:768px){
+	.content									{ max-width:568px; }
+}
+
+@media (max-width:568px){
+	.content									{ max-width:480px; }
+}
+
+/* Smartphone
+=========================================== */
+@media (max-width:480px){
+	.content									{ max-width:420px; }
+}
+
+/* iPhone 6+ - referencia  */
+@media (max-width:420px){
+	.content									{ max-width:380px; }
+}
+
+/* iPhone 6 - referencia  */
+@media (max-width:380px){
+	.content									{ max-width:320px; }
+}
+
+/* iPhone 5 - referencia  */
+@media (max-width:320px){
+	.content									{ min-width: 300px; max-width:310px;  }
+}
+
+
+/**
+
+	Estilos específicos para o formato de landscape
+
+*/
+/* Landscape - Iphone 6+ */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+	  /* ... */
+}
+/* Landscape - Iphone 6 */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	  /* ... */
+}
+/* Landscape - Iphone 5 */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+	/* ... */
+}

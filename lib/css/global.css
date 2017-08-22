@@ -1,0 +1,181 @@
+/*
+
+	Document   : estilos.css
+	TODO customize this sample style
+
+*/
+
+
+/*
+
+	# 	ressets
+
+========================================== */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, details, figure, figcaption, footer, header, hgroup, menu, nav, section, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; font-weight:normal; vertical-align:baseline; outline:none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+*, *:after, *:before 						{ -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; margin: 0; padding: 0; border:0; outline: none; }
+body, html 									{ height: 100%; }
+html 										{ background: #fff; }
+body 										{ font:16px Helvetica, sans-serif; color:#000000; background-color: rgb(220, 220, 220); }
+img 										{ border:none; overflow: hidden; display: inline-block; vertical-align: top; zoom: 1; *display: inline; }
+fieldset									{ display:block; border:none; }
+nav ul 										{ overflow: hidden; }
+ul li										{ list-style:none; }
+a											{ text-decoration:none; outline: none !important;}
+p strong									{ font-weight:bold; }
+
+
+/*
+
+	# 	recursos
+	# 	arvore de recursos
+	#	=> recuros do sistema
+	#	=> recursos do layout
+
+========================================== */
+
+/* recuros do sistema ==================== */
+.debug                                      { width: 100%; position: fixed; top: -100px; z-index: 9999; padding:30px 10px; text-align: center; border-bottom: 1px solid #666; background: #feefb3; color: #333; font-size: 16px; font-family: Arial, Tahoma; cursor: pointer; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; transition:all 1s ease; -moz-transition:all 1s ease; -ms-transition:all 1s ease; -o-transition:all 1s ease; -webkit-transition:all 1s ease; }
+.debug_ativo                                { top: 0; transition:all 1s ease; -moz-transition:all 1s ease; -ms-transition:all 1s ease; -o-transition:all 1s ease; -webkit-transition:all 1s ease; }
+.warning_class                              { background:url('/js/4/autoform/booble.gif') top left no-repeat; color: #ffffff; z-index: 500; font-weight:bold; line-height:20px;height:25px; min-width:200px; padding-left:4px; text-align:left }
+.resposta                                   { padding:10px; text-align:center; border:1px solid #ccc; font-size:14px; margin:10px 0 30px 0; }
+
+/* recuros do layout ===================== */
+.none                                       { display:none; }
+.clear                                      { clear:both; }
+.textNone                                   { text-indent: -9999px  !important; overflow: hidden  !important; outline: none  !important; }
+.aparence                                   { -webkit-appearance: none !important;  -moz-appearance: none !important;  appearance: none !important; }
+
+/* regras gerais  ======================== */
+.flex                                       { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; }
+.rowNoWrap                                  { flex-flow: row nowrap; -ms-flex-flow: row nowrap; -webkit-flex-flow: row nowrap; }
+.rowWrap                                    { flex-flow: row wrap; -ms-flex-flow: row wrap; -webkit-flex-flow: row wrap; }
+.flexStart                                  { justify-content: flex-start; }
+.flexEnd                                    { justify-content: flex-end; }
+
+/* background-size ======================== */
+.cover                                      {  -webkit-background-size: cover !important;  -moz-background-size: cover !important;  -o-background-size: cover !important;  background-size: cover !important;  }
+.contain                                    {  -webkit-background-size: contain;  -moz-background-size: contain;  -o-background-size: contain;  background-size: contain;  }
+
+/* cover em Pseudo classe ================= */
+.pseudo-element::before,
+.pseudo-element::after                      {  -webkit-background-size: cover;  -moz-background-size: cover;  -o-background-size: cover;  background-size: cover;  }
+
+/* background-position ==================== */
+.backCenterNoRepeat                         { background-position: center center; background-repeat: no-repeat; }
+.backTopNoRepeat                            { background-position: top center; background-repeat: no-repeat; }
+.backAttachment                             { background-attachment: fixed; }
+
+/* background-position ==================== */
+:root {
+	/* color */
+	--exemplo-color: valores hex ou rgba;
+	/* backs */
+	--exemplo--exemplo-background-color: valores hex ou rgba;
+	/* border */
+	--exemplo-border-color: valores hex ou rgba;
+
+	/* 
+		Uso:
+		color: var(--exemplo-color
+	*/
+}
+
+/* Float's ================================ */
+.fLeft                                      { float: left; }
+.fRight                                     { float: right; }
+
+/* Colunas ================================ */
+.col_1 										{ width: 100%; }
+.col_1_2,
+.col_2_4 									{ width: 50%; }
+
+.col_1_3 									{ width: 33.33%; }
+.col_2_3 									{ width: 66.66%; }
+
+.col_1_4 									{ width: 25%; }
+.col_3_4 									{ width: 75%; }
+
+.col_1_5 									{ width: 20%; }
+.col_2_5 									{ width: 40%; }
+.col_3_5 									{ width: 60%; }
+.col_4_5 									{ width: 80%; }
+
+/* container's ============================ */
+.container									{ width:100%; }
+.content									{ width:960px; margin: 0 auto; }
+
+/* gcBox | Padões de textos e etc */
+.gcBox p                                    { margin-bottom: 1em; }
+.gcBox a                                    { color:#000; text-decoration: underline; }
+.gcBox h1                                   { font-size: 30px; }
+.gcBox h2                                   { font-size: 25px; }
+.gcBox h3                                   { font-size: 20px; }
+.gcBox h4                                   { font-size: 18px; }
+.gcBox h5                                   { font-size: 16px; }
+.gcBox h6                                   { font-size: 14px; }
+
+.gcBox sub 									{ vertical-align: sub; font-size: smaller; }
+.gcBox sup 									{ vertical-align: super; font-size: smaller; }    
+.gcBox blockquote 							{ display: block; -webkit-margin-before: 1em; -webkit-margin-after: 1em; -webkit-margin-start: 40px; -webkit-margin-end: 40px; }
+
+.gcBox ul 									{ padding-left: 20px; }
+.gcBox ul li                                { list-style: disc; }
+.gcBox ol 									{ padding-left: 20px; }
+.gcBox ol li                                { list-style: decimal; }
+
+
+
+/*
+    IE10 and IE11
+    ================== 
+*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { 
+    /* todas as regras do IE10 e IE11 */
+}
+
+/* Transições ============================ */
+.transition__all_3s_ease {
+	-webkit-transition: all .3s ease;
+	-moz-transition:    all .3s ease;
+	-ms-transition:     all .3s ease;
+	-o-transition:      all .3s ease;
+	transition:         all .3s ease;
+}
+
+/* Transformações ======================== */
+.className {
+	-moz-transform:  	translateX(-120%);
+	-webkit-transform: 	translateX(-120%);
+	-o-transform: 		translateX(-120%);
+	-ms-transform: 		translateX(-120%);
+	transform: 			translateX(-120%);
+}
+
+/* Keyframes ============================ */
+
+/* opacity100 3s */
+.className {
+	-webkit-animation: opacity100 3s; /* Safari 4+ */
+	-moz-animation:    opacity100 3s; /* Fx 5+ */
+	-o-animation:      opacity100 3s; /* Opera 12+ */
+	animation:         opacity100 3s; /* IE 10+, Fx 29+ */
+}
+
+/* effetcs | opacity - 0 > 100% */
+@-webkit-keyframes opacity100 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes opacity100 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes opacity100 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes opacity100 {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
