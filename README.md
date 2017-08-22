@@ -4,4 +4,6 @@ Começando hoje um novo projeto de construção do meu proveto web em que contar
 
 
 Log:
-v0.1 - Inicio do projeto e "montagem" da arvore de arquivos / arquitetura da infromação
+v0.1.0 - Inicio do projeto e "montagem" da arvore de arquivos / arquitetura da infromação
+
+v0.1.1 - Transformado em página no github. Mais informações GitHub Pages.
